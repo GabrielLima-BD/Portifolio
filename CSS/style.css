@@ -507,7 +507,7 @@ body.light-theme .project-link:hover {
 .contact-cards {
   display: flex;
   justify-content: center;
-  gap: 3rem; /* Mais espaço entre os ícones */
+  gap: 2rem; /* Espaçamento reduzido para mobile */
   margin-top: 2rem;
   flex-wrap: wrap;
 }
@@ -515,10 +515,10 @@ body.light-theme .project-link:hover {
 .contact-card {
   background-color: rgba(32, 22, 59, 0.8);
   border-radius: 15px;
-  padding: 1.5rem;
+  padding: 1rem; /* Padding reduzido */
   text-align: center;
-  width: 100px; /* Menor largura para ícones maiores */
-  height: 100px; /* Altura fixa para consistência */
+  width: 70px; /* Menor largura para mobile */
+  height: 70px; /* Menor altura */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -531,7 +531,7 @@ body.light-theme .contact-card {
 }
 
 .contact-card i {
-  font-size: 2.5rem; /* Ícones maiores */
+  font-size: 1.8rem; /* Ícones menores em mobile */
   color: inherit;
 }
 
@@ -581,12 +581,19 @@ body.light-theme .footer {
   .home-img {
     margin-top: 3rem;
   }
+  .home-buttons .btn {
+    padding: 0.6rem 1.5rem; /* Botões menores em mobile */
+    font-size: 0.9rem; /* Texto menor */
+  }
   .contact-cards {
-    flex-direction: column;
-    align-items: center;
+    gap: 1.5rem; /* Espaçamento ajustado */
   }
   .contact-card {
-    width: 100px;
-    height: 100px;
+    width: 60px; /* Ainda menor */
+    height: 60px; /* Ainda menor */
+    padding: 0.8rem; /* Padding reduzido */
+  }
+  .contact-card i {
+    font-size: 1.5rem; /* Ícones ainda menores */
   }
 }
