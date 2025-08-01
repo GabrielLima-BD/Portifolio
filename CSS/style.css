@@ -20,7 +20,7 @@ body.dark-theme {
 
 /* Tema claro */
 body.light-theme {
-  background-color: #110f21;
+  background-color: #eee;
   color: #333;
 }
 
@@ -389,12 +389,12 @@ body.light-theme .section-title {
 
 body.dark-theme .about-description,
 body.dark-theme .contact-description {
-  color: #bbb;
+  color: #a345ff;
 }
 
 body.light-theme .about-description,
 body.light-theme .contact-description {
-  color: #666;
+  color: #a345ff;
 }
 
 /* Projetos */
@@ -448,7 +448,7 @@ body.dark-theme .project-title {
 }
 
 body.light-theme .project-title {
-  color: #333;
+  color: #d3bfff;
 }
 
 .project-desc {
@@ -462,7 +462,7 @@ body.dark-theme .project-desc {
 }
 
 body.light-theme .project-desc {
-  color: #666;
+  color: #bbb;
 }
 
 .project-tech {
@@ -475,7 +475,7 @@ body.dark-theme .project-tech {
 }
 
 body.light-theme .project-tech {
-  color: #6c757d;
+  color: #9e82ff;
 }
 
 .project-link {
