@@ -3,44 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfólio - Seu Nome</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <title>Gabriel Lima | Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
-<body>
-  <header>
-    <h1>Gabriel Lima</h1>
-    <p>Data Developer | Transformando dados em insights</p>
+<body class="dark-theme">
+  <header class="header">
+    <nav class="nav container">
+      <button class="nav-toggle" aria-label="Abrir menu">
+        <span class="hamburger"></span>
+      </button>
+      <button class="theme-toggle" aria-label="Alternar tema">
+        <span class="theme-icon">🌙</span>
+      </button>
+      <div class="nav-overlay"></div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
-    <section id="projetos">
-      <h2>Projetos</h2>
-      <div class="projects" id="projects-container">
-        <!-- Projetos inseridos pelo JS -->
+
+  <main class="main container">
+    <section id="home" class="home section grid">
+      <div class="home-data">
+        <h1 class="home-title">
+          <span id="typed-text"></span>
+        </h1>
+        <p class="home-subtitle">Data Developer | Python | SQL | Power BI</p>
+        <div class="home-buttons">
+          <a href="#" class="btn btn-primary">Download CV</a>
+          <a href="#contato" class="btn btn-outline">Entrar em contato</a>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="imagens/FotoPerfil.jpg" alt="Foto Perfil" class="home-photo" />
       </div>
     </section>
 
-    <section id="sobre">
-      <h2>Sobre Mim</h2>
-      <p class="about-text">
-        Sou um Data Developer apaixonado por transformar dados em soluções inteligentes.
-        Tenho experiência com bancos de dados, análise de dados e criação de dashboards que facilitam a tomada de decisão.
+    <section id="sobre" class="about section">
+      <h2 class="section-title">Sobre mim</h2>
+      <p class="about-description">
+        Desenvolvedor Data Developer com foco em transformar dados em insights valiosos. Trabalho com banco de dados, análise e visualização, buscando sempre eficiência e qualidade.
       </p>
     </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <ul class="contact-list">
-        <li>Email: <a href="g.delima.ti@gmail.com" class="contact-link">g.delima.ti@gmail.com</a></li>
-        <li>LinkedIn: <a href="www.linkedin.com/in/gabrieldlimabd" target="_blank" class="contact-link">www.linkedin.com/in/gabrieldlimabd</a></li>
-        <li>GitHub: <a href="https://github.com/GabrielLima-BD" target="_blank" class="contact-link">https://github.com/GabrielLima-BD</a></li>
-      </ul>
+    <section id="projetos" class="projects section">
+      <h2 class="section-title">Projetos</h2>
+      <div class="projects-grid" id="projects-container"></div>
+    </section>
+
+    <section id="contato" class="contact section">
+      <h2 class="section-title">Contatos</h2>
+      <div class="contact-cards">
+        <a href="mailto:g.delima.ti@gmail.com" class="contact-card">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/5511995253676" class="contact-card">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/gabrieldlimabd" target="_blank" class="contact-card">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/GabrielLima-BD" target="_blank" class="contact-card">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
     </section>
   </main>
-  <footer>
-    &copy; 2025 Seu Nome. Todos os direitos reservados.
+
+  <footer class="footer">
+    <p>© 2025 Gabriel de Lima. Todos os direitos reservados.</p>
   </footer>
 
   <script src="JavaScript/script.js"></script>
+  <script>
+    const text = "Olá, eu sou o Gabriel Lima";
+    let index = 0;
+    const typing = () => {
+      const element = document.getElementById("typed-text");
+      if (index < text.length) {
+        element.textContent += text.charAt(index);
+        index++;
+        setTimeout(typing, 100);
+      }
+    };
+    window.addEventListener("DOMContentLoaded", typing);
+  </script>
 </body>
 </html>
