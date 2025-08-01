@@ -20,7 +20,7 @@ body.dark-theme {
 
 /* Tema claro */
 body.light-theme {
-  background-color: #f5f5f5;
+  background-color: #110f21;
   color: #333;
 }
 
@@ -46,8 +46,8 @@ body.dark-theme .header {
 }
 
 body.light-theme .header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #ccc;
+  background-color: #20163b;
+  border-bottom: 1px solid #6c27cc;
 }
 
 .nav {
@@ -70,7 +70,7 @@ body.dark-theme .theme-toggle {
 }
 
 body.light-theme .theme-toggle {
-  color: #007bff;
+  color: #8c3fff;
 }
 
 .nav-menu {
@@ -117,7 +117,7 @@ body.dark-theme .nav-link.active {
 
 body.light-theme .nav-link:hover,
 body.light-theme .nav-link.active {
-  color: #007bff;
+  color: #a345ff;
 }
 
 .nav-link.active::after,
@@ -138,7 +138,7 @@ body.dark-theme .nav-link:hover::after {
 
 body.light-theme .nav-link.active::after,
 body.light-theme .nav-link:hover::after {
-  background: #007bff;
+  background: #a345ff;
 }
 
 /* Overlay de fundo desfocado */
@@ -197,7 +197,7 @@ body.dark-theme .hamburger::after {
 body.light-theme .hamburger,
 body.light-theme .hamburger::before,
 body.light-theme .hamburger::after {
-  background-color: #007bff;
+  background-color: #a345ff;
 }
 
 .hamburger {
@@ -300,7 +300,7 @@ body.dark-theme .btn-primary {
 }
 
 body.light-theme .btn-primary {
-  background-color: #007bff;
+  background-color: #a345ff;
   color: white;
 }
 
@@ -310,7 +310,7 @@ body.dark-theme .btn-primary:hover {
 }
 
 body.light-theme .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: #7a27f0;
   box-shadow: 0 7px 20px rgba(0,86,179,0.7);
 }
 
@@ -324,8 +324,8 @@ body.dark-theme .btn-outline {
 }
 
 body.light-theme .btn-outline {
-  border: 2px solid #007bff;
-  color: #007bff;
+  border: 2px solid #a345ff;
+  color: #a345ff;
 }
 
 body.dark-theme .btn-outline:hover {
@@ -334,7 +334,7 @@ body.dark-theme .btn-outline:hover {
 }
 
 body.light-theme .btn-outline:hover {
-  background-color: #007bff;
+  background-color: #a345ff;
   color: #fff;
 }
 
@@ -358,7 +358,7 @@ body.dark-theme .home-photo {
 }
 
 body.light-theme .home-photo {
-  border: 6px solid #007bff;
+  border: 6px solid #a345ff;
 }
 
 /* Sections comuns */
@@ -377,7 +377,7 @@ body.dark-theme .section-title {
 }
 
 body.light-theme .section-title {
-  color: #007bff;
+  color: #a345ff;
 }
 
 .about-description,
@@ -420,7 +420,7 @@ body.dark-theme .project-card {
 }
 
 body.light-theme .project-card {
-  background-color: #ffffff;
+  background-color: #20163b;
   color: #444;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
@@ -490,7 +490,7 @@ body.dark-theme .project-link {
 }
 
 body.light-theme .project-link {
-  color: #007bff;
+  color: #a345ff;
 }
 
 body.dark-theme .project-link:hover {
@@ -499,8 +499,8 @@ body.dark-theme .project-link:hover {
 }
 
 body.light-theme .project-link:hover {
-  color: #0056b3;
-  border-color: #0056b3;
+  color: #d2bbff;
+  border-color: #d2bbff;
 }
 
 /* Contato */
@@ -540,7 +540,7 @@ body.dark-theme .contact-card i {
 }
 
 body.light-theme .contact-card i {
-  color: #007bff;
+  color: #a345ff;
 }
 
 .contact-card:hover {
@@ -549,7 +549,7 @@ body.light-theme .contact-card i {
 }
 
 body.light-theme .contact-card:hover {
-  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+  box-shadow: 0 5px 15px rgba(163, 69, 255, 0.3);
 }
 
 /* Footer */
@@ -567,8 +567,8 @@ body.dark-theme .footer {
 }
 
 body.light-theme .footer {
-  background-color: #ffffff;
-  color: #007bff;
+  background-color: #20163b;
+  color: #a345ff;
   box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
 }
 
