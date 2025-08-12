@@ -539,49 +539,40 @@ body.dark-theme .project-link:hover {
 
 body.light-theme .project-link:hover {
   color: #d2bbff;
-    border-color: #d2bbff;
+  border-color: #d2bbff;
+}
+
+/* Botões contato */
+.contact-cards {
+  display: flex;          /* ativa layout flexível */
+  gap: 2rem;              /* aumenta espaço entre os botões */
+  justify-content: center; /* centraliza horizontalmente */
+  flex-wrap: wrap;        /* permite quebra de linha em telas pequenas */
+  padding: 1rem 0;        /* espaçamento vertical */
+}
+
+.contact-card {
+  width: 60px;
+  height: 60px;
+  padding: 0.8rem;
+  display: flex;          /* centraliza o ícone */
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: #a345ff33; /* leve cor de fundo para destaque */
+  color: #a345ff;
+  text-decoration: none;  /* remove underline */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-card:hover {
+  box-shadow: 0 5px 15px rgba(163, 69, 255, 0.4);
+  transform: translateY(-5px);
 }
 
 .contact-card i {
   font-size: 1.8rem;
-  color: inherit;
-}
-
-body.dark-theme .contact-card i {
-  color: #a345ff;
-}
-
-body.light-theme .contact-card i {
-  color: #a345ff;
-}
-
-.contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(163, 69, 255, 0.3);
-}
-
-body.light-theme .contact-card:hover {
-  box-shadow: 0 5px 15px rgba(163, 69, 255, 0.3);
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 1.5rem 0;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-
-body.dark-theme .footer {
-  background-color: #20163b;
-  color: #a345ff;
-  box-shadow: 0 -5px 15px rgba(163,69,255,0.3);
-}
-
-body.light-theme .footer {
-  background-color: #20163b;
-  color: #a345ff;
-  box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
 }
 
 /* Responsividade */
@@ -610,17 +601,7 @@ body.light-theme .footer {
     padding: 0.8rem 2rem;
     font-size: 1rem;
   }
-  .contact-cards {
-    gap: 1.5rem;
-  }
-  .contact-card {
-    width: 60px;
-    height: 60px;
-    padding: 0.8rem;
-  }
-  .contact-card i {
-    font-size: 1.5rem;
-  }
+
   .about {
     padding-top: 6rem; 
   }
