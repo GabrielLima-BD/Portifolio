@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -20,15 +19,15 @@ body.dark-theme {
 
 /* Tema claro */
 body.light-theme {
-  background-color: #eee;
+  background-color: #ffffff;
   color: #333;
 }
 
 /* Container padrão */
 .container {
-  max-width: 1200px;
+  max-width: 1800px; 
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 /* Header / Navegação */
@@ -241,12 +240,19 @@ body.light-theme .hamburger::after {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 3rem;
+  gap: 4rem;
   padding: 4rem 0;
+  justify-content: space-between;
+}
+
+.home-data {
+  text-align: left;
+  margin-left: 1rem;
+  max-width: 50%;
 }
 
 .home-title {
-  font-size: 3.2rem;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 
@@ -259,7 +265,7 @@ body.light-theme .home-title {
 }
 
 .home-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 1.5rem 0 2.5rem;
 }
 
@@ -273,16 +279,16 @@ body.light-theme .home-subtitle {
 
 .home-buttons {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .btn {
-  padding: 1rem 2.5rem;
+  padding: 1.2rem 1rem;
   border-radius: 30px;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -341,13 +347,14 @@ body.light-theme .btn-outline:hover {
 /* Foto circular */
 .home-img {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  margin-right: 1rem;
 }
 
 .home-photo {
-  width: 300px;
-  height: 300px;
+  width: 420px;
+  height: 420px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
@@ -380,26 +387,58 @@ body.light-theme .section-title {
   color: #a345ff;
 }
 
-.about-description,
-.contact-description {
-  max-width: 800px;
+/* Sobre Mim */
+.about {
+  padding-top: 10rem; 
+}
+
+.about-card {
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-theme .about-card {
+  background-color: #20163b;
+  box-shadow: 0 5px 20px rgba(163,69,255,0.2);
+}
+
+body.light-theme .about-card {
+  background-color: #f8f9fa;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.about-card:hover {
+  transform: translateY(-7px);
+}
+
+body.dark-theme .about-card:hover {
+  box-shadow: 0 8px 35px rgba(163,69,255,0.5);
+}
+
+body.light-theme .about-card:hover {
+  box-shadow: 0 8px 35px rgba(0,0,0,0.2);
+}
+
+.about-description {
   font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
 }
 
-body.dark-theme .about-description,
-body.dark-theme .contact-description {
-  color: #a345ff;
+body.dark-theme .about-description {
+  color: #bbb;
 }
 
-body.light-theme .about-description,
-body.light-theme .contact-description {
-  color: #a345ff;
+body.light-theme .about-description {
+  color: #666;
 }
 
 /* Projetos */
 .projects-grid {
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -448,7 +487,7 @@ body.dark-theme .project-title {
 }
 
 body.light-theme .project-title {
-  color: #d3bfff;
+  color: #333;
 }
 
 .project-desc {
@@ -462,7 +501,7 @@ body.dark-theme .project-desc {
 }
 
 body.light-theme .project-desc {
-  color: #bbb;
+  color: #666;
 }
 
 .project-tech {
@@ -475,7 +514,7 @@ body.dark-theme .project-tech {
 }
 
 body.light-theme .project-tech {
-  color: #9e82ff;
+  color: #6c757d;
 }
 
 .project-link {
@@ -500,38 +539,11 @@ body.dark-theme .project-link:hover {
 
 body.light-theme .project-link:hover {
   color: #d2bbff;
-  border-color: #d2bbff;
-}
-
-/* Contato */
-.contact-cards {
-  display: flex;
-  justify-content: center;
-  gap: 2rem; /* Espaçamento reduzido para mobile */
-  margin-top: 2rem;
-  flex-wrap: wrap;
-}
-
-.contact-card {
-  background-color: rgba(32, 22, 59, 0.8);
-  border-radius: 15px;
-  padding: 1rem; /* Padding reduzido */
-  text-align: center;
-  width: 70px; /* Menor largura para mobile */
-  height: 70px; /* Menor altura */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-body.light-theme .contact-card {
-  background-color: rgba(200, 200, 200, 0.2);
+    border-color: #d2bbff;
 }
 
 .contact-card i {
-  font-size: 1.8rem; /* Ícones menores em mobile */
+  font-size: 1.8rem;
   color: inherit;
 }
 
@@ -577,23 +589,46 @@ body.light-theme .footer {
   .home {
     grid-template-columns: 1fr;
     text-align: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .home-data {
+    margin-left: 0;
+    max-width: 80%;
   }
   .home-img {
-    margin-top: 3rem;
+    margin-right: 0;
+    justify-content: center;
+  }
+  .home-title {
+    font-size: 2.5rem;
+  }
+  .home-subtitle {
+    font-size: 1.1rem;
   }
   .home-buttons .btn {
-    padding: 0.6rem 1.5rem; /* Botões menores em mobile */
-    font-size: 0.9rem; /* Texto menor */
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
   }
   .contact-cards {
-    gap: 1.5rem; /* Espaçamento ajustado */
+    gap: 1.5rem;
   }
   .contact-card {
-    width: 60px; /* Ainda menor */
-    height: 60px; /* Ainda menor */
-    padding: 0.8rem; /* Padding reduzido */
+    width: 60px;
+    height: 60px;
+    padding: 0.8rem;
   }
   .contact-card i {
-    font-size: 1.5rem; /* Ícones ainda menores */
+    font-size: 1.5rem;
+  }
+  .about {
+    padding-top: 6rem; 
+  }
+  .about-card {
+    max-width: 90%; 
+    padding: 1.5rem;
+  }
+  .about-description {
+    font-size: 1rem;
   }
 }

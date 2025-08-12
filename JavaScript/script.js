@@ -73,8 +73,42 @@ function themeToggleHandler() {
   });
 }
 
+// Lazy Loading com Intersection Observer
+function lazyLoadSections() {
+  const sections = document.querySelectorAll('.lazy-section');
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        if (entry.target.id === 'projetos') {
+          loadProjects(); // Carrega projetos apenas quando a seção estiver visível
+        }
+        observer.unobserve(entry.target); // Para de observar após carregar
+      }
+    });
+  }, { rootMargin: '50px' }); // Carrega 50px antes de entrar na tela
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+}
+
+// Inicialização
 window.onload = () => {
-  loadProjects();
   navToggleHandler();
   themeToggleHandler();
+  lazyLoadSections();
 };
+
+// Efeito de digitação
+const text = "Olá, eu sou o Gabriel Lima";
+let index = 0;
+const typing = () => {
+  const element = document.getElementById("typed-text");
+  if (index < text.length) {
+    element.textContent += text.charAt(index);
+    index++;
+    setTimeout(typing, 100);
+  }
+};
+window.addEventListener("DOMContentLoaded", typing);
