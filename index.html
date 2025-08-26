@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Gabriel Lima - Backend Developer</title>
+    <meta name="description" content="Portfólio de Gabriel Lima, programador backend especializado em bancos de dados e APIs.">
+    <meta name="keywords" content="programador backend, bancos de dados, APIs, desenvolvimento web">
+    <meta property="og:title" content="Portfólio de Gabriel Lima">
+    <meta property="og:description" content="Conheça meus projetos e habilidades em desenvolvimento backend e bancos de dados.">
+    <meta property="og:image" content="imagens/FotoPerfil.jpg">
+    <meta property="og:url" content="https://gabriellima-portfolio.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <div id="full-page-particles"></div>
+
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <div class="menu-toggle">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="profile-photo">
+                <img src="imagens/Foto Perfil/FotoPerfil.jpg" alt="Foto de perfil" class="photo" loading="lazy">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#servicos">O Que Eu Faço</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#conhecimentos">Conhecimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li class="social-icons">
+                        <a href="https://github.com/GabrielLima-BD" target="_blank" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/gabrieldlimabd" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://wa.me/5551995253676" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                        <a href="mailto:g.delima.ti@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    
+    <main class="main-content">
+        <section id="home" class="section home">
+            <div id="particles-js"></div>
+            <div class="container">
+                <div class="home-content">
+                    <h1 class="typing-effect"></h1>
+                    <p>Programador Backend Focado em Bancos de Dados</p>
+                    <a href="#contato" class="btn">Contate-me</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="sobre" class="section sobre">
+            <h2 class="section-title">
+                <span class="title-bg">SOBRE MIM</span>
+                <span class="title-main">Sobre Mim</span>
+            </h2>
+            <div class="container">
+                <div class="sobre-content">
+                    <p>Eu sou Gabriel Lima, programador backnd com 5 anos de experiência em bancos de dados relacionais e não relacionais.</p>
+                    <h3>Minha Jornada</h3>
+                    <p>Comecei minha carreira como entusiasta de programação aos 15 anos, aprendendo linguagens básicas. Ao longo dos anos, especializei-me em backend, trabalhando em projetos que envolvem grandes volumes de dados. Meu objetivo é criar soluções eficientes que escalem e resolvam problemas reais de negócios. Além do código, gosto de colaborar em equipes ágeis, onde posso alinhar tecnologia com necessidades do usuário. No tempo livre, estudo novas tecnologias e contribuo para comunidades open-source.</p>
+                    <ul>
+                        <li>Experiência em equipes multidisciplinares</li>
+                        <li>Foco em performance e segurança</li>
+                        <li>Paixão por inovação em dados</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="servicos" class="section servicos">
+            <h2 class="section-title">
+                <span class="title-bg">SERVIÇO</span>
+                <span class="title-main">o que eu faço</span>
+            </h2>
+            <div class="container">
+                <ul class="service-list">
+                    <li class="service-item" data-service="backend">
+                        Desenvolvimento Backend
+                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </li>
+                    <li class="service-item" data-service="db">
+                        Gerenciamento de Bancos de Dados (SQL/NoSQL)
+                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </li>
+                    <li class="service-item" data-service="api">
+                        Integrações API
+                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </li>
+                    <li class="service-item" data-service="frontend">
+                        Desenvolvimento Frontend Básico
+                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Modais dos serviços -->
+        <div class="modal" id="modal-backend">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h3>Desenvolvimento Backend</h3>
+                <p>No desenvolvimento backend, eu crio a lógica do servidor que alimenta aplicações web e mobile. Utilizo linguagens como Node.js, Python ou Java para construir sistemas robustos. Por exemplo, desenvolvo APIs RESTful ou GraphQL que integram com bancos de dados. Meu processo envolve entender as necessidades do cliente, projetar a arquitetura, implementar o código e testar para garantir performance. Alinhamos ideias através de reuniões iniciais, wireframes e iterações ágeis.</p>
+            </div>
+        </div>
+        <div class="modal" id="modal-db">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h3>Gerenciamento de Bancos de Dados</h3>
+                <p>Especializado em bancos como SQL Server, MySQL e MongoDB, eu gerencio armazenamento de dados para sistemas integrados. Isso inclui modelagem de dados, otimização de queries e backups. Para lojas online, por exemplo, crio schemas que lidam com transações seguras. Alinho com o cliente definindo requisitos de dados, criando ERDs e implementando soluções escaláveis.</p>
+            </div>
+        </div>
+        <div class="modal" id="modal-api">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h3>Integrações API</h3>
+                <p>Conecto sistemas através de APIs, permitindo comunicação entre serviços. Por exemplo, integro pagamentos ou autenticação externa. O processo inclui análise de endpoints, implementação de autenticação (OAuth/JWT) e testes de integração. Colaboramos para mapear fluxos de dados e garantir segurança.</p>
+            </div>
+        </div>
+        <div class="modal" id="modal-frontend">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h3>Desenvolvimento Frontend Básico</h3>
+                <p>Embora focado em backend, desenvolvo interfaces simples com HTML, CSS e JS. Crio sites responsivos para lojas ou dashboards. Alinho designs com o cliente via protótipos, implemento interações e integro com o backend.</p>
+            </div>
+        </div>
+
+        <!-- Seção Projetos -->
+        <section id="projetos" class="section projetos">
+            <h2 class="section-title">
+                <span class="title-bg">PROJETOS</span>
+                <span class="title-main">Projetos</span>
+
+            </h2>
+            <div class="container">
+                <div class="swiper large-projects">
+                    <div class="swiper-wrapper">
+                        <div class="project-item swiper-slide"
+                            data-project-id="biblioteca"
+                            data-title="Sistema e APP - Biblioteca"
+                            data-image="imagens/Projetos/Biblioteca.webp"
+                            data-description="Este é um sistema de gerenciamento de biblioteca composto por um aplicativo em Python (TkInter) para funcionários e uma API em JavaScript que se conecta a um banco de dados PostgreSQL no Supabase. Permite controle de empréstimos, devoluções, cadastro de livros e usuários, além de relatórios completos."
+                            data-languages='["python", "javascript", "postgresql"]'
+                            data-github="https://github.com/GabrielLima-BD/P-Biblioteca">
+                            <div class="project-content">
+                                <h4>Sistema e APP - Biblioteca</h4>
+                                <img src="imagens/Projetos/Biblioteca.webp" alt="Sistema de Biblioteca" loading="lazy">
+                                <p class="description-preview">
+                                    Este é um sistema de gerenciamento de biblioteca composto por um aplicativo em Python (TkInter) para funcionários e uma API em JavaScript que se conecta a um banco de dados PostgreSQL no Supabase. Permite controle de empréstimos, devoluções, cadastro de livros e usuários, além de relatórios completos.
+                                </p>
+                                <div class="project-languages">
+                                    <i class="fab fa-python" aria-hidden="true"></i>
+                                    <i class="fab fa-js" aria-hidden="true"></i>
+                                    <i class="fas fa-database" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-item swiper-slide"
+                            data-project-id="costureira"
+                            data-title="Sistema Completo para Costureira"
+                            data-image="imagens/Projetos/EmDesenvolvimento.webp"
+                            data-description="Este é um sistema de gestão de ateliê de costura que permite o controle completo de clientes, pedidos e finanças. A plataforma inclui autenticação de usuários com diferentes níveis de acesso e gerencia todo o fluxo de trabalho: desde o cadastro de medidas e o registro de pedidos com detalhes e valores, até a baixa automática de estoque de materiais. O sistema também implementa regras de negócio para pagamentos e status dos pedidos, e pode enviar notificações para aprimorar a comunicação com os clientes."
+                            data-languages='["nodejs", "express", "mongodb", "javascript"]'
+                            data-github="https://github.com/GabrielLima-BD/Cafeteria">
+                            <div class="project-content">
+                                <h4>Sistema Completo para Costureira</h4>
+                                <img src="imagens/Projetos/EmDesenvolvimento.webp" alt="Sistema de Costureira" loading="lazy">
+                                <p class="description-preview">
+                                    Este é um sistema de gestão de ateliê de costura que permite o controle completo de clientes, pedidos e finanças. A plataforma inclui autenticação de usuários com diferentes níveis de acesso...
+                                </p>
+                                <div class="project-languages">
+                                    <i class="fab fa-node-js" aria-hidden="true"></i>
+                                    <i class="fab fa-js" aria-hidden="true"></i>
+                                    <i class="fas fa-database" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="section-title">Projetos Pequenos</h2>
+                <div class="swiper small-projects">
+                    <div class="swiper-wrapper">
+                        <div class="project-item swiper-slide"
+                            data-project-id="Space-Shooter"
+                            data-title="Space-Shooter"
+                            data-image="imagens/Projetos/Space-Shooter.webp"
+                            data-description="API REST para gUm jogo estilo Space Shooter feito em Python + Pygame, com sistema de pontuação, diferentes inimigos e sons.
+                                              Este projeto foi desenvolvido como trabalho acadêmico para a faculdade no curso de Tecnologia da Informação, servindo como prática de programação, lógica de jogos e uso de bibliotecas gráficas."
+                            data-languages='["python", "pygame"]'
+                            data-github="https://github.com/GabrielLima-BD/Space-Shooter">
+                            <div class="project-content">
+                                <h4>Space-Shooter</h4>
+                                <p class="description-preview">
+                                    Um jogo estilo Space Shooter feito em Python + Pygame, com sistema de...</p>
+                                <div class="project-languages">
+                                    <i class="fab fa-python" aria-hidden="true"></i>
+                                    <i class="fab fa-pygame" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Adicione outros projetos pequenos aqui -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conhecimentos" class="section conhecimentos">
+            <h2 class="section-title">
+                <span class="title-bg">CONHECIMENTOS</span>
+                <span class="title-main">Conhecimentos</span>
+
+            </h2>
+            <div class="container wider-container">
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span><i class="fab fa-html5" aria-hidden="true"></i> HTML - 95%</span>
+                        <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span><i class="fab fa-css3-alt" aria-hidden="true"></i> CSS - 90%</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span><i class="fab fa-js" aria-hidden="true"></i> JavaScript - 80%</span>
+                        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span><i class="fab fa-microsoft" aria-hidden="true"></i> C# - 50%</span>
+                        <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span><i class="fab fa-java" aria-hidden="true"></i> Java - 30%</span>
+                        <div class="progress-bar"><div class="progress" style="width: 30%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span><i class="fas fa-database" aria-hidden="true"></i> SQL - 95%</span>
+                        <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span><i class="fas fa-database" aria-hidden="true"></i> MySQL - 90%</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span><i class="fas fa-database" aria-hidden="true"></i> PostgreSQL - 70%</span>
+                        <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span><i class="fas fa-database" aria-hidden="true"></i> MongoDB - 60%</span>
+                        <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span><i class="fas fa-database" aria-hidden="true"></i> Oracle - 40%</span>
+                        <div class="progress-bar"><div class="progress" style="width: 40%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contato" class="section contato">
+            <h2 class="section-title">
+                <span class="title-bg">FALE COMIGO</span>
+                <span class="title-main">Fale Comigo</span>
+
+            </h2>
+            <div class="container">
+                <p>Estou disponível para discutir projetos e oportunidades. Entre em contato através dos canais abaixo:</p>
+                <p><i class="fas fa-envelope" aria-hidden="true"></i> g.delima.ti@gmail.com</p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> (51) 99525-3676</p>
+                <a href="https://wa.me/5551995253676" target="_blank" class="btn">Chamar no WhatsApp</a>
+                <form action="https://formspree.io/f/seu-endpoint" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Seu Nome" required>
+                    <input type="email" name="email" placeholder="Seu Email" required>
+                    <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Modal de projeto -->
+    <div id="project-modal" class="project-modal">
+        <div class="modal-content">
+            <span class="modal-close-btn">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-left">
+                    <img id="modal-image" src="" alt="Imagem do Projeto">
+                </div>
+                <div class="modal-right">
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-description"></p>
+                    <div class="modal-languages">
+                        <h4>Linguagens e Tecnologias:</h4>
+                        <div id="modal-languages-icons" class="language-icons"></div>
+                    </div>
+                    <div class="modal-github">
+                        <a id="modal-github-link" href="#" target="_blank" class="btn">
+                            Ver no GitHub <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <button class="back-to-top" aria-label="Voltar ao topo"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
